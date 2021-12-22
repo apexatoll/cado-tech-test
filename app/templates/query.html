@@ -1,0 +1,13 @@
+{% extends("base.html") %}
+
+{% block content %}
+	{% if search %}
+		<p>Showing results for {{ search }}</p>
+	{% endif %}
+
+	{% if results %}
+		<pre>
+			{{ results }}
+		</pre>
+	{% endif %}
+{% endblock %}
