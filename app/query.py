@@ -10,7 +10,7 @@ def query():
 
     search = request.args.get("search")
 
-    results = get_whois_data(search) if form.validate() else None
+    results = get_whois_data(search) if search and form.validate() else None
 
     return render_template(
         "query.html",
