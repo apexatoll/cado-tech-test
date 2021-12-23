@@ -9,6 +9,14 @@ footer {
 	color: #999;
 }
 
+h2 {
+	margin-bottom: 0;
+}
+
+pre, pre code {
+	margin: 0 !important;
+}
+
 .container {
 	width: 95%;
 	margin: 0 auto;
@@ -17,6 +25,7 @@ footer {
 
 .searchbar {
 	display: flex;
+	margin-bottom: 30px;
 }
 
 .searchbar input, .searchbar button {
@@ -53,7 +62,8 @@ footer {
 	padding: 1em;
 	box-shadow: inset 2px 2px 2px 2px #000;
 	border-radius: 0.5em;
-	background: #111;
+	box-sizing: border-box;
+	background: #111 !important;
 	overflow: scroll;
 	max-height: 60vh;
 }
