@@ -9,13 +9,16 @@
 		<title>Whois Querier</title>
 	{% endif %}
 
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
 </head>
 
 <body>
-	{% block content %}{% endblock %}
+	<div class="container">
+		{% block content %}{% endblock %}
 
-	<footer>
-		<i>Christian Welham: Cado Security technical-test</i>
-	</footer>
+		<footer>
+			<i>Christian Welham: Cado Security technical-test</i>
+		</footer>
+	</div>
 </body>
 </html>

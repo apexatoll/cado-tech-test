@@ -8,4 +8,4 @@ class QueryForm(FlaskForm):
 
     def validate_search(form, field):
         if not re.match(r'[A-z0-9\-\.]+\.[A-z0-9\-\.]+', str(field.data)):
-            raise ValidationError("Invalid domain format")
+            raise ValidationError(f"Invalid domain: '{field.data}'")

@@ -1,0 +1,59 @@
+html {
+	font-family: "arial";
+	background: #222;
+	color: #fff;
+}
+
+footer {
+	margin-top:1em;
+	color: #999;
+}
+
+.container {
+	width: 95%;
+	margin: 0 auto;
+	max-width: 1000px;
+}
+
+.searchbar {
+	display: flex;
+}
+
+.searchbar input, .searchbar button {
+	font-size: 1em;
+	border: none;
+	box-sizing: border-box;
+	padding: 0.5em 1em;
+}
+
+.searchbar input {
+	width: 90%;
+	background: #111;
+	color: white;
+	box-shadow: inset 2px 2px 2px 2px #000;
+	border-radius: 0.5em 0 0 0.5em;
+}
+
+.searchbar button {
+	width: 10%;
+	border-radius: 0 0.5em 0.5em 0;
+}
+
+.errors {
+	width: 100%;
+	background: darkred;
+	padding: 0.5em 1em;
+	border-radius: 0.5em;
+	border: solid 1px red;
+	margin: 1em 0;
+	box-sizing: border-box;
+}
+
+.results {
+	padding: 1em;
+	box-shadow: inset 2px 2px 2px 2px #000;
+	border-radius: 0.5em;
+	background: #111;
+	overflow: scroll;
+	max-height: 60vh;
+}

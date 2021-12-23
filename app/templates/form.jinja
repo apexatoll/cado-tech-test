@@ -1,10 +1,17 @@
-{% for error in form.search.errors %}
-	{{ error }}
-{% endfor %}
+{% if form.search.errors %}
+	<div class="errors">
+		<p><b>There was an error with this request:</b></p>
+		<ul>
+			{% for error in form.search.errors %}
+				<li>{{ error }}</li>
+			{% endfor %}
+		</ul>
+	</div>
+{% endif %}
 
 <form action="/" method="GET">
-	{{ form.search.label }}
-	{{ form.search }}
-
-	<button>Search</button>
+	<div class="searchbar">
+		{{ form.search }}
+		<button>Search</button>
+	</div>
 </form>
