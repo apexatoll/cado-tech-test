@@ -2,9 +2,20 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title></title>
+
+	{% if search %}
+		<title>Whois Querier | {{ search }}</title>
+	{% else %}
+		<title>Whois Querier</title>
+	{% endif %}
+
 </head>
+
 <body>
 	{% block content %}{% endblock %}
+
+	<footer>
+		<i>Christian Welham: Cado Security technical-test</i>
+	</footer>
 </body>
 </html>

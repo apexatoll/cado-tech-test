@@ -1,0 +1,10 @@
+{% for error in form.search.errors %}
+	{{ error }}
+{% endfor %}
+
+<form action="/" method="GET">
+	{{ form.search.label }}
+	{{ form.search }}
+
+	<button>Search</button>
+</form>

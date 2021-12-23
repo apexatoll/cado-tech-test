@@ -1,13 +1,15 @@
 {% extends("base.html") %}
 
 {% block content %}
-	{% if search %}
-		<p>Showing results for {{ search }}</p>
-	{% endif %}
+	<h1>Whois Querier</h1>
 
-	{% if results %}
-		<pre>
-			{{ results }}
-		</pre>
-	{% endif %}
+	<p>Get the whois data for any domain!</p>
+
+	{% with form = form %}
+		{% include "form.jinja" %}
+	{% endwith %}
+
+	{% with results = results %}
+		{% include "results.jinja" %}
+	{% endwith %}
 {% endblock %}
